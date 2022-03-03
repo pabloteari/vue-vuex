@@ -5,7 +5,7 @@
         class="navbar-brand mx-1"
         style="width: 200px"
         href="#"
-        @click="goToLeading()"
+        @click="goToLeading"
       >
         <img id="logo-pix" alt="Vue logo" src="../assets/pix_logo.png" />
       </a>
@@ -92,10 +92,11 @@ export default {
       isActiveTab3: computed(() => store.state.module1.isActiveTab3),
       isActiveTab4: computed(() => store.state.module1.isActiveTab4),
 
-      goToTab1: () => store.commit("goToTab1", this),
-      goToTab2: () => store.commit("goToTab2", this),
-      goToTab3: () => store.commit("goToTab3", this),
-      goToTab4: () => store.commit("goToTab4", this),
+      goToTab1: () => store.commit("goToTab1"),
+      goToTab2: () => store.commit("goToTab2"),
+      goToTab3: () => store.commit("goToTab3"),
+      goToTab4: () => store.commit("goToTab4"),
+      goToLeading: () => store.commit("goToLeading"),
       // this.$router.push("/tab1")
     };
   },
@@ -105,13 +106,13 @@ export default {
 <style scoped>
 .nav-item {
   margin: 10px;
+  font-weight: 700;
 }
 .nav-item.active {
   background-color: #2a5caa;
   border-radius: 5px;
 }
 .navbar-light .nav-item.active .nav-link {
-  font-weight: 700;
   color: rgb(255, 255, 255);
 }
 </style>
