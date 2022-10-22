@@ -7,7 +7,7 @@
         href="#"
         @click="goToLeading"
       >
-        <img id="logo-pix" alt="Vue logo" src="../assets/pix_logo.png" />
+        <img id="logo" alt="Vue logo" src="../assets/logo.png" width="70" height="70"/>
       </a>
 
       <button
@@ -60,15 +60,7 @@
           </li>
         </ul>
         <span class="navbar-text"> Logo Client </span>
-        <!-- <div class="mx-1" style="width: 200px">
-          <img
-            id="logo-pix"
-            alt="Vue logo"
-            src="../assets/logo_client.png"
-            width="50"
-            height="50"
-          />
-        </div> -->
+      
       </div>
     </div>
   </nav>
