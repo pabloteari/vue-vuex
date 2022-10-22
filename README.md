@@ -1,4 +1,4 @@
-# pix_front
+# vue-vuex
 
 ## Project setup
 ```
